@@ -1,0 +1,47 @@
+{
+   "name": "express-app-starter",
+   "version": "1.0.0",
+   "description": "",
+   "main": "server.js",
+   "scripts": {
+      "start": "node server",
+      "dev": "nodemon server",
+      "prod": "SET NODE_ENV=production& pm2 start server.js",
+      "dev:dblocal": "nodemon server dblocal",
+      "debug": "ndb server.js"
+   },
+   "dependencies": {
+      "@sendgrid/mail": "^7.4.4",
+      "aws-sdk": "^2.1057.0",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.1",
+      "colors": "^1.4.0",
+      "cors": "^2.8.5",
+      "crypto": "^1.0.1",
+      "dotenv": "^8.2.0",
+      "ejs": "^3.1.6",
+      "env": "0.0.2",
+      "express": "^4.17.1",
+      "express-mongo-sanitize": "^2.0.2",
+      "express-rate-limit": "^5.2.6",
+      "helmet": "^4.4.1",
+      "hpp": "^0.2.3",
+      "html-to-text": "^7.0.0",
+      "jsonwebtoken": "^8.5.1",
+      "moment": "^2.29.1",
+      "mongoose": "^5.12.2",
+      "multer": "^1.4.4",
+      "multer-s3": "^2.10.0",
+      "nodemailer": "^6.5.0",
+      "slugify": "^1.5.0",
+      "validator": "^13.7.0",
+      "xss-clean": "^0.1.1"
+   },
+   "devDependencies": {
+      "morgan": "^1.10.0",
+      "ndb": "^1.1.5",
+      "nodemon": "^2.0.7"
+   },
+   "author": "",
+   "license": "ISC"
+}

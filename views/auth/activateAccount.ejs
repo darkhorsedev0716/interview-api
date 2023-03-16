@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+	*{
+		transition : all .5s;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction : column;
+		font-family: sans-serif;
+		background: #f1f1f1;
+	}
+	.row {
+		background: #fff;
+		margin: 100px 30px;
+	}
+	h1{
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: 50px;
+		color: #333;
+		text-align:  center;
+	}
+	h4{
+		font-weight: 300;
+		font-size: 15px;
+		text-align: center;
+		letter-spacing: 2px;
+		line-height: 35px;
+		color: #333;
+	}
+	img{
+		height: 300px;
+		margin-top: 20px;
+	}
+	</style>
+</head>
+	<body>
+		<div class="h-100">
+			<div class="row h-100 border-rounded shadow" >
+				<div class="col-12 col-md-12" style="padding: 0; text-align: center" >
+                    <%if(success){%>
+					    <img src="/public/images/041.jpg" alt="">
+                    <%}else{%>
+                        <img src="/public/images/expired.png" alt="">
+                    <%}%>
+				</div>
+				<div class="col-12 col-md-12 p-5 text-center">
+					<h1 class=" mb-4 "> <%= msg_title %> </h1>
+					<h4 class="my-4"> <%= msg_text %> </h4>
+					<%if(success){%><a href="<%= loginUrl %>" class="btn btn-outline-success py-2 px-3 mt-3">Click here to login </a><%}%>
+				</div>
+			</div>
+		</div>
+	</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>

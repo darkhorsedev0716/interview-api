@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/stylesheets/emailStyle.css" />
+    <title>Interview Completed</title>
+    
+  </head>
+  <body class="">
+    <table
+      role="presentation"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      class="body"
+    >
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                  >
+                    <tr>
+                      <td>
+                        <p> Dear <%= user.name %> , </p>
+                        <p>
+                            Thank you for completing video interview for <%= user.interview_name %>. It has been submitted to the PH for evaluation.
+                        </p>
+                        <p>
+                            If there are any questions regarding this opportunity or updates, please contact the recruitment team directly. Thank you again for using our platform and we are wishing you best of luck in your professional endeavors.
+                        </p>
+                        <p>
+                            Best regards,
+                        </p>
+                        <p>Hiiree Team</p>
+                        <p>Hiiree.com</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+              >
+              </table>
+            </div>
+            <!-- END FOOTER -->
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
